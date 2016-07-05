@@ -1,0 +1,12 @@
+# OASIS_START
+# DO NOT EDIT (digest: 7a955f8589861d3a5190e10536826a9d)
+version = "0.0.1"
+description =
+"HTML templating directly in OCaml in the style of Elm HTML and Hiccup in Clojure"
+archive(byte) = "hoquet.cma"
+archive(byte, plugin) = "hoquet.cma"
+archive(native) = "hoquet.cmxa"
+archive(native, plugin) = "hoquet.cmxs"
+exists_if = "hoquet.cma"
+# OASIS_STOP
+

@@ -1,0 +1,28 @@
+OASISFormat: 0.4
+Name:        hoquet
+Version:     0.0.1
+Synopsis:    HTML templating directly in OCaml in the style of Elm HTML and
+  Hiccup in Clojure
+Authors:     David Jeffrey
+License:     Apache-2.0
+Plugins:     META (0.4), DevFiles (0.4)
+
+Library hoquet
+  Path:       src
+  BuildTools: ocamlbuild
+  Modules:    Hoquet
+  
+Executable "test_hoquet"
+  Build$:          flag(tests)
+  Path:            test
+  MainIs:          test.ml
+  BuildTools:      ocamlbuild
+  BuildDepends:    hoquet, oUnit, str
+  CompiledObject:  Best
+  Install:         false
+  
+Test "test_hoquet"
+  Command: $test_hoquet
+  TestTools: test_hoquet
+  WorkingDirectory: test
+ 

@@ -15,4 +15,5 @@ install: [make "install"]
 remove: ["ocamlfind" "remove" "hoquet"]
 depends: [
   "ocamlfind" {build}
+  "ounit" {test}
 ]

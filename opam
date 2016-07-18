@@ -8,9 +8,10 @@ bug-reports: "https://github.com/lepoetemaudit/hoquet"
 license: "Apache 2.0"
 dev-repo: "https://github.com/lepoetemaudit/hoquet"
 build: [
-  ["./configure" "--prefix=%{prefix}%"]
+  ["./configure" "--prefix=%{prefix}%" "--%{ounit:enable}%-tests"]
   [make]
 ]
+build-test: [make "test"]
 install: [make "install"]
 remove: ["ocamlfind" "remove" "hoquet"]
 depends: [

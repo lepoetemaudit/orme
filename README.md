@@ -1,5 +1,7 @@
 # Hoquet
 
+![Build status](https://travis-ci.org/lepoetemaudit/hoquet.svg)
+
 Elm HTML / Hiccup style HTML generation in standard OCaml.
 
 Unlike Elm HTML this does not implement a virtual dom. It is mostly

@@ -14,13 +14,13 @@ true: annot, bin_annot
 ".git": not_hygienic
 "_darcs": -traverse
 "_darcs": not_hygienic
-# Library hoquet
-"src/hoquet.cmxs": use_hoquet
-# Executable test_hoquet
+# Library orme
+"src/orme.cmxs": use_orme
+# Executable test_orme
 <test/test.{native,byte}>: pkg_oUnit
 <test/test.{native,byte}>: pkg_str
-<test/test.{native,byte}>: use_hoquet
+<test/test.{native,byte}>: use_orme
 <test/*.ml{,i,y}>: pkg_oUnit
 <test/*.ml{,i,y}>: pkg_str
-<test/*.ml{,i,y}>: use_hoquet
+<test/*.ml{,i,y}>: use_orme
 # OASIS_STOP

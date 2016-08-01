@@ -1,4 +1,4 @@
-(* Hoquet - main module implementation *)
+(* Orme - main module implementation *)
 
 type attribute = | Attribute of string * string
 

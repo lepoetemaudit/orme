@@ -1,5 +1,5 @@
 open OUnit2
-open Hoquet
+open Orme
 
 let identity a = a
 

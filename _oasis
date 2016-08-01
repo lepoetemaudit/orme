@@ -1,5 +1,5 @@
 OASISFormat: 0.4
-Name:        hoquet
+Name:        orme
 Version:     0.0.1
 Synopsis:    HTML templating directly in OCaml in the style of Elm HTML and
   Hiccup in Clojure
@@ -7,22 +7,22 @@ Authors:     David Jeffrey
 License:     Apache-2.0
 Plugins:     META (0.4), DevFiles (0.4)
 
-Library hoquet
+Library orme
   Path:       src
   BuildTools: ocamlbuild
-  Modules:    Hoquet
+  Modules:    Orme
   
-Executable "test_hoquet"
+Executable "test_orme"
   Build$:          flag(tests)
   Path:            test
   MainIs:          test.ml
   BuildTools:      ocamlbuild
-  BuildDepends:    hoquet, oUnit, str
+  BuildDepends:    orme, oUnit, str
   CompiledObject:  Best
   Install:         false
   
-Test "test_hoquet"
-  Command: $test_hoquet
-  TestTools: test_hoquet
+Test "test_orme"
+  Command: $test_orme
+  TestTools: test_orme
   WorkingDirectory: test
  

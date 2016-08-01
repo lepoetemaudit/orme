@@ -1,4 +1,4 @@
-# Hoquet
+# Orme
 
 Elm HTML / Hiccup style HTML generation in standard OCaml.
 
@@ -9,7 +9,7 @@ intended for server-side rendering of templates.
 
 ```ocaml
 
-open Hoquet
+open Orme
 
 let person name =
   div [] [ text name ]

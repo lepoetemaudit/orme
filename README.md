@@ -1,8 +1,8 @@
 # Orme
 
-![Build status](https://travis-ci.org/lepoetemaudit/hoquet.svg)
+[![Build Status](https://travis-ci.org/lepoetemaudit/orme.svg?branch=master)](https://travis-ci.org/lepoetemaudit/orme)
 
-Elm HTML / Hiccup style HTML generation in standard OCaml.
+Elm HTML / Hiccup style HTML generation using OCaml syntax.
 
 Unlike Elm HTML this does not implement a virtual dom. It is mostly
 intended for server-side rendering of templates.
@@ -24,7 +24,7 @@ let () =
     ] |> render_html |> print_string
 ```
 
-Here's an example returning as part of an HTTP response using Cohttp:
+Here's an example returning HTML as part of an HTTP response using Cohttp:
 
 ```ocaml
 open Lwt

@@ -1,19 +1,19 @@
 opam-version: "1.2"
-name: "hoquet"
+name: "orme"
 version: "0.1.0"
 maintainer: "David Jeffrey <mail@davidjeffrey.co.uk>"
 authors: "David Jeffrey <mail@davidjeffrey.co.uk>"
-homepage: "https://github.com/lepoetemaudit/hoquet"
-bug-reports: "https://github.com/lepoetemaudit/hoquet"
+homepage: "https://github.com/lepoetemaudit/orme"
+bug-reports: "https://github.com/lepoetemaudit/orme"
 license: "Apache 2.0"
-dev-repo: "https://github.com/lepoetemaudit/hoquet"
+dev-repo: "https://github.com/lepoetemaudit/orme"
 build: [
   ["./configure" "--prefix=%{prefix}%" "--%{ounit:enable}%-tests"]
   [make]
 ]
 build-test: [make "test"]
 install: [make "install"]
-remove: ["ocamlfind" "remove" "hoquet"]
+remove: ["ocamlfind" "remove" "orme"]
 depends: [
   "ocamlfind" {build}
   "ounit" {test}

@@ -36,6 +36,8 @@ let id = attr "id"
 let name = attr "name"
 let value = attr "value"
 
+let escaped value =
+  Str.global_replace (Str.regexp "\"") "&quot;" value
 
 (* Special "text" node *)
 let text value = Text value
@@ -47,7 +49,7 @@ let script' body =
 (* Convert attribute to a string *)
 let render_attr attr =
   match attr with 
-    Attribute (key, value) ->  key ^ "=\"" ^ value ^ "\"" 
+    Attribute (key, value) ->  key ^ "=\"" ^ (escaped value) ^ "\"" 
 
 (* Convert node to a string *)
 let rec render_html node =

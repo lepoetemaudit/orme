@@ -25,6 +25,13 @@ let body = element "body"
 
 let div = element "div"
 let p = element "p"
+let h1 = element "h1"
+let h2 = element "h2"
+let h3 = element "h3"
+let h4 = element "h4"
+let h5 = element "h5"
+let h6 = element "h6"
+
 let a = element "a"
 let form = element "form"
 

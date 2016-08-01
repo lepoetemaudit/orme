@@ -1,8 +1,9 @@
 # OASIS_START
-# DO NOT EDIT (digest: e04c7219c7d39d11e86d6e3b8fa958bb)
+# DO NOT EDIT (digest: be7f6ba675fb5d83411e1e1f1d093c39)
 version = "0.0.1"
 description =
 "HTML templating directly in OCaml in the style of Elm HTML and Hiccup in Clojure"
+requires = "str"
 archive(byte) = "orme.cma"
 archive(byte, plugin) = "orme.cma"
 archive(native) = "orme.cmxa"
